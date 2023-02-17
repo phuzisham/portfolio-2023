@@ -1,0 +1,448 @@
+@mixin font($font-family, $font-file) {
+  @font-face {
+    font-family: $font-family;
+    src: url($font-file + '.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+}
+
+@include font('Mr Dafoe', '../assets/fonts/MrDafoe-Regular');
+@include font('Six Caps', '../assets/fonts/SixCaps-Regular');
+@include font('MavenPro', '../assets/fonts/MavenPro-Bold');
+@include font('Barcode', '../assets/fonts/Barcode');
+
+$cream: #ecd5aa;
+$darkPurple: #29152e;
+$lightPurple: #ffeeff;
+$lightGold: #a78c5f;
+$darkGold: #5b4c28;
+$red: #ed222e;
+$yellow: #fcb711;
+$orange: #ff792e;
+$pink: #fc66a8;
+$green: #bec722;
+$blue: #02b3a0;
+$brown: #594543;
+$transparent-white: rgba(250, 250, 250, 0.7);
+
+a.btn {
+  background-color: $blue;
+  color: white;
+  width: 100%;
+  max-width: 300px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+a.btn:hover {
+  background-color: $yellow;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.section-title {
+  font-family: 'MavenPro', sans-serif;
+  font-size: 3rem !important;
+}
+
+.yellow-text {
+  color: $yellow;
+}
+
+.blue-text {
+  color: $blue;
+}
+
+.pink-text {
+  color: $pink;
+}
+
+.navbar {
+  background-color: $darkPurple;
+}
+
+.navbar-brand {
+  font-family: 'Six Caps', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+
+.navbar-brand:hover {
+  .yellow-text {
+    color: $blue;
+  }
+
+  .blue-text {
+    color: $yellow;
+  }
+}
+
+.masthead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background-color: $brown;
+}
+
+.header-title {
+  text-align: center;
+  font-family: 'Six Caps', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 6rem;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+.header-subtitle {
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: #EB219B;
+  text-shadow: -2px -2px 0 #FFBAF2;
+  -webkit-filter: drop-shadow(3px 3px 1px #441F62);
+  -webkit-transform: skew(-5deg,-5deg);
+  font-weight: normal;
+  letter-spacing: 0.7rem;
+}
+
+header {
+  hr {
+    left: 0px;
+    width:100%;
+    margin:0;
+  }
+
+  hr#thread1 {
+    border-color: $yellow;
+    -webkit-animation: barAnimation 4s;
+    -moz-animation:    barAnimation 4s;
+    -o-animation:      barAnimation 4s;
+    animation:         barAnimation 4s;
+    animation-delay: -2s;
+    border-width: 24px;
+  }
+
+  hr#thread2 {
+    border-color: $orange;
+    -webkit-animation: barAnimation 6s;
+    -moz-animation:    barAnimation 6s;
+    -o-animation:      barAnimation 6s;
+    animation:         barAnimation 6s;
+    animation-delay: -4s;
+    border-width: 24px;
+  }
+
+  hr#thread3 {
+    border-color: $pink;
+    -webkit-animation: barAnimation 8s;
+    -moz-animation:    barAnimation 8s;
+    -o-animation:      barAnimation 8s;
+    animation:         barAnimation 8s;
+    animation-delay: -6s;
+    border-width: 24px;
+  }
+
+  hr#thread4 {
+    border-color: $green;
+    -webkit-animation: barAnimation 10s;
+    -moz-animation:    barAnimation 10s;
+    -o-animation:      barAnimation 10s;
+    animation:         barAnimation 10s;
+    animation-delay: -8s;
+    border-width: 24px;
+  }
+
+  hr#thread5 {
+    border-color: $blue;
+    -webkit-animation: barAnimation 12s;
+    -moz-animation:    barAnimation 12s;
+    -o-animation:      barAnimation 12s;
+    animation:         barAnimation 12s;
+    animation-delay: -10s;
+    border-width: 24px;
+  }
+}
+
+@-webkit-keyframes barAnimation {
+  0%   { width: 100%; }
+  50% { width: 100%; }
+  80% { width: 0px;}
+  100%{ width:100%;}
+}
+
+@-moz-keyframes barAnimation {
+  0%   { width: 100%; }
+  50% { width: 100%; }
+  80% { width: 0px;}
+  100%{ width:100%;}
+}
+
+@-o-keyframes barAnimation {
+  0%   { width: 100%; }
+  50% { width: 100%; }
+  80% { width: 0px;}
+  100%{ width:100%;}
+}
+
+@keyframes barAnimation {
+  0%   { width: 100%; }
+  50% { width: 100%; }
+  80% { width: 0px;}
+  100%{ width:100%;}
+}
+
+#portfolio {
+  background: linear-gradient(105deg, black 25%, $yellow 25%);
+
+  .section-title {
+    color: $red;
+  }
+}
+
+.portfolio-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+
+  .caption {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(33, 37, 41, 0.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+
+    .caption-content {
+      color: #fff;
+      margin: auto 2rem 2rem;
+      opacity: 0;
+
+      h4 {
+        font-family: 'MavenPro', sans-serif;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+#about.content-section {
+  padding-top: 0;
+  margin-top: -16px;
+}
+
+#about {
+  background-color: black;
+  color: $lightGold;
+
+  img {
+    max-width: 100%;
+    border-radius: 13px;
+  }
+
+  hr {
+    margin-top: 0;
+  }
+
+  hr#goldOne {
+    background: linear-gradient(to right, $darkGold 0%, $lightGold 33%, $darkGold 50%, $lightGold 83%, $darkGold 100%);
+    height: 24px;
+    margin-bottom: 4px;
+  }
+
+  hr#goldTwo {
+    background: linear-gradient(to right, $darkGold 0%, $lightGold 34%, $darkGold 51%, $lightGold 84%, $darkGold 100%);
+    height: 24px;
+    margin-bottom: 7px;
+  }
+
+  hr#goldThree {
+    background: linear-gradient(to right, $darkGold 0%, $lightGold 35%, $darkGold 52%, $lightGold 85%, $darkGold 100%);
+    height: 20px;
+    margin-bottom: 10px;
+  }
+
+  hr#goldFour {
+    background: linear-gradient(to right, $darkGold 0%, $lightGold 36%, $darkGold 53%, $lightGold 86%, $darkGold 100%);
+    height: 15px;
+    margin-bottom: 15px;
+  }
+
+  hr#goldFive {
+    background: linear-gradient(to right, $darkGold 0%, $lightGold 37%, $darkGold 54%, $lightGold 87%, $darkGold 100%);
+    height: 10px;
+    margin-bottom: 20px;
+  }
+
+  hr#goldSix {
+    background: linear-gradient(to right, $darkGold 0%, $lightGold 38%, $darkGold 55%, $lightGold 88%, $darkGold 100%);
+    height: 7px;
+    margin-bottom: 3rem;
+  }
+
+  span {
+    color: $blue;
+  }
+}
+
+#contact {
+  background: $darkPurple;
+  background-image: linear-gradient($lightPurple .1em, transparent .1em), linear-gradient(90deg, $lightPurple .1em, transparent .1em);
+  background-size: 3em 3em;
+
+  .form {
+    background-color: grey;
+    color: black;
+  }
+
+  input,
+  textarea {
+    background-color: $darkPurple;
+    color: $lightPurple;
+    border: none;
+  }
+
+  input::placeholder {
+    display: none;
+  }
+
+  button {
+    background-color: $darkPurple;
+    color: $lightPurple;
+  }
+
+  button:hover {
+    background-color: $lightPurple;
+    color: $darkPurple;
+  }
+}
+
+#project {
+  background-color: $brown;
+  color: white;
+
+  a {
+    color: $pink;
+  }
+
+  a:hover {
+    color: $yellow;
+    text-decoration: none;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  h4.section-title {
+    font-size: 1.5rem !important;
+  }
+}
+
+.project-buttons {
+  background: $darkPurple;
+  display: flex;
+}
+
+footer {
+  background-color: grey;
+
+  .social-link {
+    background-color: $darkPurple !important;
+    color: $lightPurple !important;
+  }
+
+  .social-link:hover {
+    background-color: $lightPurple !important;
+    color: $darkPurple !important;
+  }
+
+  .social-link svg {
+    margin-bottom: 1.5px;
+  }
+
+  .copy {
+    font-family: 'Barcode', cursive;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .portfolio-item {
+    max-width: none;
+    margin: 0;
+
+    .caption {
+      transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+      transition: clip-path 0.25s ease-out, background-color 0.7s;
+      transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+      -webkit-clip-path: inset(0px);
+      clip-path: inset(0px);
+
+      .caption-content {
+        transition: opacity 1s;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        margin-bottom: 5rem;
+      }
+    }
+
+    img {
+      transition: -webkit-clip-path 0.25s ease-out;
+      transition: clip-path 0.25s ease-out;
+      transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+      -webkit-clip-path: inset(-1px);
+      clip-path: inset(-1px);
+    }
+  }
+
+  .portfolio-item:hover {
+    img {
+      -webkit-clip-path: inset(2rem);
+      clip-path: inset(2rem);
+    }
+
+    .caption {
+      background-color: $red;
+      -webkit-clip-path: inset(2rem);
+      clip-path: inset(2rem);
+    }
+
+    .caption-content {
+      opacity: 1;
+    }
+  }
+
+  #about {
+    img {
+      float: left;
+      max-width: 300px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .project-buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  #contact {
+    .form {
+      margin-left: 1.5em;
+      margin-right: 1.5em;
+      padding: 1em !important;
+    }
+  }
+}
