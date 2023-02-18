@@ -14,7 +14,7 @@
 }
 @font-face {
   font-family: "MavenPro";
-  src: url("../assets/fonts/MavenPro-Bold.ttf") format("truetype");
+  src: url("../assets/fonts/MavenPro.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -46,6 +46,9 @@ p {
 .section-title {
   font-family: "MavenPro", sans-serif;
   font-size: 3rem !important;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
 }
 
 .yellow-text {
@@ -83,80 +86,84 @@ p {
   display: table;
   width: 100%;
   height: 100vh;
-  background-color: #594543;
+  background-color: #F7C824;
 }
 
 .header-title {
   text-align: center;
-  font-family: "Six Caps", sans-serif;
+  font-family: "MavenPro", sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
   font-size: 6rem;
-  font-weight: 100;
-  line-height: 1.5;
+  margin: 0;
+  color: #F03637;
 }
 
 .header-subtitle {
-  font-family: "Mr Dafoe", cursive;
+  font-family: "MavenPro", sans-serif;
   font-size: 4rem;
-  margin-bottom: 0;
-  color: #EB219B;
-  text-shadow: -2px -2px 0 #FFBAF2;
-  -webkit-filter: drop-shadow(3px 3px 1px #441F62);
-  -webkit-transform: skew(-5deg, -5deg);
-  font-weight: normal;
-  letter-spacing: 0.7rem;
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  color: #805D2F;
 }
 
+.sub-title-container {
+  background-color: #000;
+  padding: 1rem;
+}
+
+header img {
+  max-width: 420px;
+}
+header .bar-container {
+  background-color: #000;
+}
 header hr {
   left: 0px;
   width: 100%;
   margin: 0;
+  border-width: 24px;
 }
-header hr#thread1 {
-  border-color: #fcb711;
+header #thread1 {
+  border-color: #805D2F;
   -webkit-animation: barAnimation 4s;
   -moz-animation: barAnimation 4s;
   -o-animation: barAnimation 4s;
   animation: barAnimation 4s;
   animation-delay: -2s;
-  border-width: 24px;
+  border-width: 16px;
 }
-header hr#thread2 {
-  border-color: #ff792e;
+header #thread2 {
+  border-color: #3B93CF;
   -webkit-animation: barAnimation 6s;
   -moz-animation: barAnimation 6s;
   -o-animation: barAnimation 6s;
   animation: barAnimation 6s;
   animation-delay: -4s;
-  border-width: 24px;
 }
-header hr#thread3 {
-  border-color: #fc66a8;
+header #thread3 {
+  border-color: #C55099;
   -webkit-animation: barAnimation 8s;
   -moz-animation: barAnimation 8s;
   -o-animation: barAnimation 8s;
   animation: barAnimation 8s;
   animation-delay: -6s;
-  border-width: 24px;
 }
-header hr#thread4 {
-  border-color: #bec722;
+header #thread4 {
+  border-color: #F03637;
   -webkit-animation: barAnimation 10s;
   -moz-animation: barAnimation 10s;
   -o-animation: barAnimation 10s;
   animation: barAnimation 10s;
   animation-delay: -8s;
-  border-width: 24px;
 }
-header hr#thread5 {
-  border-color: #02b3a0;
+header #thread5 {
+  border-color: #CFA100;
   -webkit-animation: barAnimation 12s;
   -moz-animation: barAnimation 12s;
   -o-animation: barAnimation 12s;
   animation: barAnimation 12s;
   animation-delay: -10s;
-  border-width: 24px;
 }
 
 @-webkit-keyframes barAnimation {
@@ -216,10 +223,13 @@ header hr#thread5 {
   }
 }
 #portfolio {
-  background: linear-gradient(105deg, black 25%, #fcb711 25%);
+  background-color: #F7C824;
 }
 #portfolio .section-title {
-  color: #ed222e;
+  color: #3B93CF;
+}
+#portfolio img {
+  filter: grayscale(1);
 }
 
 .portfolio-item {
@@ -249,81 +259,43 @@ header hr#thread5 {
   font-size: 2rem;
 }
 
-#about.content-section {
+#about {
+  background-color: #F7C824;
   padding-top: 0;
   margin-top: -16px;
 }
-
-#about {
-  background-color: black;
-  color: #a78c5f;
-}
-#about img {
-  max-width: 100%;
-  border-radius: 13px;
-}
-#about hr {
-  margin-top: 0;
-}
-#about hr#goldOne {
-  background: linear-gradient(to right, #5b4c28 0%, #a78c5f 33%, #5b4c28 50%, #a78c5f 83%, #5b4c28 100%);
-  height: 24px;
-  margin-bottom: 4px;
-}
-#about hr#goldTwo {
-  background: linear-gradient(to right, #5b4c28 0%, #a78c5f 34%, #5b4c28 51%, #a78c5f 84%, #5b4c28 100%);
-  height: 24px;
-  margin-bottom: 7px;
-}
-#about hr#goldThree {
-  background: linear-gradient(to right, #5b4c28 0%, #a78c5f 35%, #5b4c28 52%, #a78c5f 85%, #5b4c28 100%);
-  height: 20px;
-  margin-bottom: 10px;
-}
-#about hr#goldFour {
-  background: linear-gradient(to right, #5b4c28 0%, #a78c5f 36%, #5b4c28 53%, #a78c5f 86%, #5b4c28 100%);
-  height: 15px;
-  margin-bottom: 15px;
-}
-#about hr#goldFive {
-  background: linear-gradient(to right, #5b4c28 0%, #a78c5f 37%, #5b4c28 54%, #a78c5f 87%, #5b4c28 100%);
-  height: 10px;
-  margin-bottom: 20px;
-}
-#about hr#goldSix {
-  background: linear-gradient(to right, #5b4c28 0%, #a78c5f 38%, #5b4c28 55%, #a78c5f 88%, #5b4c28 100%);
-  height: 7px;
-  margin-bottom: 3rem;
+#about .section-title {
+  color: #3B93CF;
 }
 #about span {
-  color: #02b3a0;
+  color: #3B93CF;
+  font-weight: bold;
 }
 
 #contact {
-  background: #29152e;
-  background-image: linear-gradient(#ffeeff 0.1em, transparent 0.1em), linear-gradient(90deg, #ffeeff 0.1em, transparent 0.1em);
-  background-size: 3em 3em;
+  background-color: #F7C824;
+  padding-top: 0;
+  margin-top: -16px;
 }
-#contact .form {
-  background-color: grey;
-  color: black;
+#contact .section-title {
+  color: #3B93CF;
+}
+#contact img {
+  max-width: 100%;
+  border-radius: 13px;
 }
 #contact input,
 #contact textarea {
-  background-color: #29152e;
-  color: #ffeeff;
+  background-color: #000;
+  color: #FFF;
   border: none;
 }
-#contact input::placeholder {
-  display: none;
-}
 #contact button {
-  background-color: #29152e;
-  color: #ffeeff;
+  background-color: #F03637;
+  color: #FFF;
 }
 #contact button:hover {
-  background-color: #ffeeff;
-  color: #29152e;
+  background-color: #3B93CF;
 }
 
 #project {
@@ -350,15 +322,50 @@ header hr#thread5 {
 }
 
 footer {
-  background-color: grey;
+  background-color: #000;
+  padding-top: 0 !important;
+  margin-top: -16px;
+}
+footer hr {
+  margin-top: 0;
+}
+footer #goldOne {
+  background: linear-gradient(to right, #5b4c28 0%, #a78c5f 33%, #5b4c28 50%, #a78c5f 83%, #5b4c28 100%);
+  height: 24px;
+  margin-bottom: 4px;
+}
+footer #goldTwo {
+  background: linear-gradient(to right, #5b4c28 0%, #a78c5f 34%, #5b4c28 51%, #a78c5f 84%, #5b4c28 100%);
+  height: 24px;
+  margin-bottom: 7px;
+}
+footer #goldThree {
+  background: linear-gradient(to right, #5b4c28 0%, #a78c5f 35%, #5b4c28 52%, #a78c5f 85%, #5b4c28 100%);
+  height: 20px;
+  margin-bottom: 10px;
+}
+footer #goldFour {
+  background: linear-gradient(to right, #5b4c28 0%, #a78c5f 36%, #5b4c28 53%, #a78c5f 86%, #5b4c28 100%);
+  height: 15px;
+  margin-bottom: 15px;
+}
+footer #goldFive {
+  background: linear-gradient(to right, #5b4c28 0%, #a78c5f 37%, #5b4c28 54%, #a78c5f 87%, #5b4c28 100%);
+  height: 10px;
+  margin-bottom: 20px;
+}
+footer #goldSix {
+  background: linear-gradient(to right, #5b4c28 0%, #a78c5f 38%, #5b4c28 55%, #a78c5f 88%, #5b4c28 100%);
+  height: 7px;
+  margin-bottom: 3rem;
 }
 footer .social-link {
-  background-color: #29152e !important;
-  color: #ffeeff !important;
+  background-color: #F03637 !important;
+  color: #FFF !important;
 }
 footer .social-link:hover {
-  background-color: #ffeeff !important;
-  color: #29152e !important;
+  background-color: #3B93CF !important;
+  color: #FFF !important;
 }
 footer .social-link svg {
   margin-bottom: 1.5px;
@@ -366,6 +373,7 @@ footer .social-link svg {
 footer .copy {
   font-family: "Barcode", cursive;
   font-size: 2rem;
+  color: #805D2F;
 }
 
 @media (min-width: 992px) {
@@ -398,16 +406,34 @@ footer .copy {
     clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption {
-    background-color: #ed222e;
+    background-color: #F03637;
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption-content {
     opacity: 1;
   }
+  #about .section-title {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    margin: 0;
+  }
   #about img {
     float: left;
     max-width: 300px;
+  }
+  #portfolio .section-title {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    margin: 0;
+  }
+  #contact .section-title {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    margin: 0;
+  }
+  #contact .form-control:not(#message) {
+    _height: 3rem;
   }
 }
 @media (max-width: 768px) {
