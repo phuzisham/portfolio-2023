@@ -1,18 +1,4 @@
 @font-face {
-  font-family: "Mr Dafoe";
-  src: url("../assets/fonts/MrDafoe-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: "Six Caps";
-  src: url("../assets/fonts/SixCaps-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
   font-family: "MavenPro";
   src: url("../assets/fonts/MavenPro.ttf") format("truetype");
   font-weight: normal;
@@ -26,17 +12,8 @@
   font-style: normal;
   font-display: block;
 }
-a.btn {
-  background-color: #02b3a0;
-  color: white;
-  width: 100%;
-  max-width: 300px;
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-a.btn:hover {
-  background-color: #fcb711;
+body {
+  background-color: #F7C824;
 }
 
 p {
@@ -49,71 +26,52 @@ p {
   font-weight: 400;
   letter-spacing: -0.05em;
   text-transform: uppercase;
-}
-
-.yellow-text {
-  color: #fcb711;
-}
-
-.blue-text {
-  color: #02b3a0;
-}
-
-.pink-text {
-  color: #fc66a8;
+  color: #3B93CF;
 }
 
 .navbar {
-  background-color: #29152e;
-}
-
-.navbar-brand {
-  font-family: "Six Caps", sans-serif;
-  font-size: 2rem;
-  letter-spacing: 5px;
-}
-
-.navbar-brand:hover .yellow-text {
-  color: #02b3a0;
-}
-.navbar-brand:hover .blue-text {
-  color: #fcb711;
-}
-
-.masthead {
-  min-height: 30rem;
-  position: relative;
-  display: table;
-  width: 100%;
-  height: 100vh;
   background-color: #F7C824;
 }
-
-.header-title {
-  text-align: center;
+.navbar .navbar-brand {
   font-family: "MavenPro", sans-serif;
+  font-size: 2rem;
+  letter-spacing: -0.05em;
+  color: #F03637;
   text-transform: uppercase;
-  font-size: 6rem;
-  margin: 0;
+}
+.navbar .navbar-brand span {
+  color: #3B93CF;
+  text-transform: lowercase;
+}
+.navbar .navbar-brand span.dark {
+  color: #000;
+}
+.navbar .navbar-brand:hover {
+  color: #3B93CF;
+}
+.navbar .navbar-brand:hover span:not(.dark) {
   color: #F03637;
 }
 
-.header-subtitle {
+header {
+  width: 100%;
+  height: 100vh;
+}
+header .header-subtitle {
   font-family: "MavenPro", sans-serif;
   font-size: 4rem;
   margin: 0;
   font-weight: 400;
   letter-spacing: -0.05em;
-  color: #805D2F;
+  color: #5B4C28;
 }
-
-.sub-title-container {
+header .sub-title-container {
   background-color: #000;
   padding: 1rem;
 }
-
 header img {
-  max-width: 420px;
+  max-width: 50vh;
+  min-width: 300px;
 }
 header .bar-container {
   background-color: #000;
@@ -125,7 +83,7 @@ header hr {
   border-width: 24px;
 }
 header #thread1 {
-  border-color: #805D2F;
+  border-color: #5B4C28;
   -webkit-animation: barAnimation 4s;
   -moz-animation: barAnimation 4s;
   -o-animation: barAnimation 4s;
@@ -222,12 +180,6 @@ header #thread5 {
     width: 100%;
   }
 }
-#portfolio {
-  background-color: #F7C824;
-}
-#portfolio .section-title {
-  color: #3B93CF;
-}
 #portfolio img {
   filter: grayscale(1);
 }
@@ -260,12 +212,8 @@ header #thread5 {
 }
 
 #about {
-  background-color: #F7C824;
   padding-top: 0;
   margin-top: -16px;
-}
-#about .section-title {
-  color: #3B93CF;
 }
 #about span {
   color: #3B93CF;
@@ -273,12 +221,8 @@ header #thread5 {
 }
 
 #contact {
-  background-color: #F7C824;
   padding-top: 0;
   margin-top: -16px;
-}
-#contact .section-title {
-  color: #3B93CF;
 }
 #contact img {
   max-width: 100%;
@@ -299,14 +243,14 @@ header #thread5 {
 }
 
 #project {
-  background-color: #594543;
+  background-color: #000;
   color: white;
 }
 #project a {
-  color: #fc66a8;
+  color: #C55099;
 }
 #project a:hover {
-  color: #fcb711;
+  color: #CFA100;
   text-decoration: none;
 }
 #project ul {
@@ -315,10 +259,13 @@ header #thread5 {
 #project h4.section-title {
   font-size: 1.5rem !important;
 }
-
-.project-buttons {
-  background: #29152e;
-  display: flex;
+#project .btn {
+  background-color: #F03637;
+  color: #FFF;
+}
+#project .btn:hover {
+  background-color: #3B93CF;
+  color: #FFF;
 }
 
 footer {
@@ -330,32 +277,32 @@ footer hr {
   margin-top: 0;
 }
 footer #goldOne {
-  background: linear-gradient(to right, #5b4c28 0%, #a78c5f 33%, #5b4c28 50%, #a78c5f 83%, #5b4c28 100%);
+  background: linear-gradient(to right, #5B4C28 0%, #a78c5f 33%, #5B4C28 50%, #a78c5f 83%, #5B4C28 100%);
   height: 24px;
   margin-bottom: 4px;
 }
 footer #goldTwo {
-  background: linear-gradient(to right, #5b4c28 0%, #a78c5f 34%, #5b4c28 51%, #a78c5f 84%, #5b4c28 100%);
+  background: linear-gradient(to right, #5B4C28 0%, #a78c5f 34%, #5B4C28 51%, #a78c5f 84%, #5B4C28 100%);
   height: 24px;
   margin-bottom: 7px;
 }
 footer #goldThree {
-  background: linear-gradient(to right, #5b4c28 0%, #a78c5f 35%, #5b4c28 52%, #a78c5f 85%, #5b4c28 100%);
+  background: linear-gradient(to right, #5B4C28 0%, #a78c5f 35%, #5B4C28 52%, #a78c5f 85%, #5B4C28 100%);
   height: 20px;
   margin-bottom: 10px;
 }
 footer #goldFour {
-  background: linear-gradient(to right, #5b4c28 0%, #a78c5f 36%, #5b4c28 53%, #a78c5f 86%, #5b4c28 100%);
+  background: linear-gradient(to right, #5B4C28 0%, #a78c5f 36%, #5B4C28 53%, #a78c5f 86%, #5B4C28 100%);
   height: 15px;
   margin-bottom: 15px;
 }
 footer #goldFive {
-  background: linear-gradient(to right, #5b4c28 0%, #a78c5f 37%, #5b4c28 54%, #a78c5f 87%, #5b4c28 100%);
+  background: linear-gradient(to right, #5B4C28 0%, #a78c5f 37%, #5B4C28 54%, #a78c5f 87%, #5B4C28 100%);
   height: 10px;
   margin-bottom: 20px;
 }
 footer #goldSix {
-  background: linear-gradient(to right, #5b4c28 0%, #a78c5f 38%, #5b4c28 55%, #a78c5f 88%, #5b4c28 100%);
+  background: linear-gradient(to right, #5B4C28 0%, #a78c5f 38%, #5B4C28 55%, #a78c5f 88%, #5B4C28 100%);
   height: 7px;
   margin-bottom: 3rem;
 }
@@ -373,7 +320,7 @@ footer .social-link svg {
 footer .copy {
   font-family: "Barcode", cursive;
   font-size: 2rem;
-  color: #805D2F;
+  color: #5B4C28;
 }
 
 @media (min-width: 992px) {
@@ -413,39 +360,23 @@ footer .copy {
   .portfolio-item:hover .caption-content {
     opacity: 1;
   }
-  #about .section-title {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    margin: 0;
-  }
-  #about img {
-    float: left;
-    max-width: 300px;
-  }
-  #portfolio .section-title {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    margin: 0;
-  }
+  #about .section-title,
+  #portfolio .section-title,
   #contact .section-title {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     margin: 0;
   }
-  #contact .form-control:not(#message) {
-    _height: 3rem;
-  }
 }
-@media (max-width: 768px) {
-  .project-buttons {
-    flex-direction: column;
+@media screen and (max-width: 500px) {
+  p {
+    font-size: 1.333rem;
   }
-}
-@media (max-width: 576px) {
-  #contact .form {
-    margin-left: 1.5em;
-    margin-right: 1.5em;
-    padding: 1em !important;
+  header img {
+    max-width: 80%;
+  }
+  header .header-subtitle {
+    font-size: 3.2rem;
   }
 }
 
