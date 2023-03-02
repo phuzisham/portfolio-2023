@@ -1,15 +1,11 @@
 @font-face {
   font-family: "MavenPro";
   src: url("../assets/fonts/MavenPro.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
   font-display: block;
 }
 @font-face {
   font-family: "Barcode";
   src: url("../assets/fonts/Barcode.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
   font-display: block;
 }
 body {
@@ -323,7 +319,7 @@ footer .copy {
   color: #5B4C28;
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .portfolio-item {
     max-width: none;
     margin: 0;
@@ -374,6 +370,7 @@ footer .copy {
   }
   header img {
     max-width: 80%;
+    min-width: auto;
   }
   header .header-subtitle {
     font-size: 3.2rem;

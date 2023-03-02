@@ -2,15 +2,12 @@
   @font-face {
     font-family: $font-family;
     src: url($font-file + '.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
     font-display: block;
   }
 }
 
 @include font('MavenPro', '../assets/fonts/MavenPro');
 @include font('Barcode', '../assets/fonts/Barcode');
-
 
 $lightGold: #a78c5f;
 $kodakBlue: #3B93CF;
@@ -345,7 +342,7 @@ footer {
   }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .portfolio-item {
     max-width: none;
     margin: 0;
@@ -406,10 +403,11 @@ footer {
   p {
     font-size: 1.333rem;
   }
-  
+
   header {
     img {
-      max-width: 80%
+      max-width: 80%;
+      min-width: auto;
     }
 
     .header-subtitle {
