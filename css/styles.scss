@@ -25,6 +25,16 @@ p {
   font-size: 1.2rem;
 }
 
+.btn {
+  background-color: $kodakRed;
+  color: #FFF !important;
+}
+
+.btn:hover {
+  background-color: $kodakBlue;
+  color: #FFF;
+}
+
 .section-title {
   font-family: 'MavenPro', sans-serif;
   font-size: 3rem !important;
@@ -233,15 +243,6 @@ header {
     color: #FFF;
     border: none;
   }
-
-  button {
-    background-color: $kodakRed;
-    color: #FFF;
-  }
-
-  button:hover {
-    background-color: $kodakBlue;
-  }
 }
 
 #project {
@@ -263,16 +264,6 @@ header {
 
   h4.section-title {
     font-size: 1.5rem !important;
-  }
-
-  .btn {
-    background-color: $kodakRed;
-    color: #FFF;
-  }
-
-  .btn:hover {
-    background-color: $kodakBlue;
-    color: #FFF;
   }
 }
 

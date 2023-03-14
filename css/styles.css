@@ -16,6 +16,16 @@ p {
   font-size: 1.2rem;
 }
 
+.btn {
+  background-color: #F03637;
+  color: #FFF !important;
+}
+
+.btn:hover {
+  background-color: #3B93CF;
+  color: #FFF;
+}
+
 .section-title {
   font-family: "MavenPro", sans-serif;
   font-size: 3rem !important;
@@ -230,13 +240,6 @@ header #thread5 {
   color: #FFF;
   border: none;
 }
-#contact button {
-  background-color: #F03637;
-  color: #FFF;
-}
-#contact button:hover {
-  background-color: #3B93CF;
-}
 
 #project {
   background-color: #000;
@@ -254,14 +257,6 @@ header #thread5 {
 }
 #project h4.section-title {
   font-size: 1.5rem !important;
-}
-#project .btn {
-  background-color: #F03637;
-  color: #FFF;
-}
-#project .btn:hover {
-  background-color: #3B93CF;
-  color: #FFF;
 }
 
 footer {
