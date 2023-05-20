@@ -360,7 +360,8 @@ footer .copy {
   }
 }
 @media screen and (max-width: 500px) {
-  p {
+  p,
+  .navbar .navbar-brand {
     font-size: 1.333rem;
   }
   header img {
